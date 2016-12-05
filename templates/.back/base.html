@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="renderer" content="webkit">
+
+    <title>{% block title %}{% end %}</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link href="{{ static_url("css/bootstrap.min.css?v=3.4.0") }}" rel="stylesheet">
+    <link href="{{ static_url("font-awesome/css/font-awesome.css?v=4.3.0") }}" rel="stylesheet">
+
+    <!-- Morris -->
+    <link href="{{ static_url("plugins/morris/morris-0.4.3.min.css") }}" rel="stylesheet">
+
+    <!-- Gritter -->
+    <link href="{{ static_url("js/plugins/gritter/jquery.gritter.css") }}" rel="stylesheet">
+
+    <link href="{{ static_url("css/animate.css") }}" rel="stylesheet">
+    <link href="{{ static_url("css/style.css?v=2.2.0") }}" rel="stylesheet">
+
+</head>
+{% block body %}{% end %}
+{% include foot.html %}                
+
+    <!-- Mainly scripts -->
+    <script src="{{ static_url("js/jquery-2.1.1.min.js") }}"></script>
+    <script src="{{ static_url("js/bootstrap.min.js?v=3.4.0") }}"></script>
+    <script src="{{ static_url("js/plugins/metisMenu/jquery.metisMenu.js") }}"></script>
+    <script src="{{ static_url("js/plugins/slimscroll/jquery.slimscroll.min.js") }}"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="{{ static_url("js/hplus.js?v=2.2.0") }}"></script>
+    <script src="{{ static_url("js/plugins/pace/pace.min.js") }}"></script>
+    {% block css %}{% end %}
+    {% block js %}{% end %}
+
+
+</body>
+
+</html>
