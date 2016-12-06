@@ -8,5 +8,5 @@ class IndexHandler(BaseHandler):
 
      def get(self):
         name = self.get_secure_cookie("username")
-        self.render('index.html')
+        self.render('opms/index.html')
 

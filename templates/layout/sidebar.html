@@ -1,0 +1,53 @@
+ <!-- left side start-->
+    <div class="left-side sticky-left-side">
+
+        <!--logo and iconic logo start-->
+        <div class="logo" style="padding-top:25px">
+            <a href="/index">OPMS平台</a>
+        </div>
+
+        <div class="logo-icon text-center">
+            <a href="/index"><img src="{{ static_url("images/logo_icon.png") }}" alt=""></a>
+        </div>
+        <!--logo and iconic logo end-->
+
+
+        <div class="left-side-inner">
+
+            <!-- visible to small devices only -->
+            <div class="visible-xs hidden-sm hidden-md hidden-lg">
+                <div class="media logged-user">
+                    <!--<img alt="" src="{{ static_url("images/photos/user-avatar.png") }}" class="media-object">-->
+                    <div class="media-body">
+                        <a href="#"><i class="fa fa-user"></i> admin</a>   
+                    </div>
+                </div>
+
+                <h5 class="left-nav-title">账号信息</h5>
+                <ul class="nav nav-pills nav-stacked custom-nav">
+                    <li><a href="#"><i class="fa fa-cog"></i> <span>设置</span></a></li>
+                    <li><a href="/logout"><i class="fa fa-sign-out"></i> <span>注销</span></a></li>
+                </ul>
+            </div>
+
+            <!--sidebar nav start-->
+            <ul class="nav nav-pills nav-stacked custom-nav">
+                <li class="menu-list nav-active"><a href="/index"><i class="fa fa-home"></i> <span>首页</span></a>
+                   <!-- <ul class="sub-menu-list">
+                        <li class="active"><a href="/index"> Dashboard </a></li>
+                    </ul>
+                    -->
+                </li>
+                <li class="menu-list"><a href=""><i class="fa fa-laptop"></i> <span>XX管理</span></a>
+                    <ul class="sub-menu-list">
+                        <li class="active"><a href="#"> 新建xx </a></li>
+                        <li><a href="#"> 编辑xx </a></li>
+                    </ul>
+                </li>
+             </ul>
+            <!--sidebar nav end-->
+
+        </div>
+    </div>
+    <!-- left side end-->
+    
