@@ -5,7 +5,7 @@ from methods.db import DB
 import json
 
 def check(username,password):
-    data = DB.query('select * from user where username = "%s" and password = "%s" '%(username,password))
+    data = DB.query('select * from user where username = "%s" and password = md5("%s") '%(username,password))
     if data:
         return True
     else:

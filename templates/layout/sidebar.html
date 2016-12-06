@@ -19,7 +19,7 @@
                 <div class="media logged-user">
                     <!--<img alt="" src="{{ static_url("images/photos/user-avatar.png") }}" class="media-object">-->
                     <div class="media-body">
-                        <a href="#"><i class="fa fa-user"></i> admin</a>   
+                        <a href="#"><i class="fa fa-user"></i> {{ username }}</a>   
                     </div>
                 </div>
 
@@ -32,17 +32,17 @@
 
             <!--sidebar nav start-->
             <ul class="nav nav-pills nav-stacked custom-nav">
-                <li class="menu-list nav-active"><a href="/index"><i class="fa fa-home"></i> <span>首页</span></a>
+                <li ><a href="/index"><i class="fa fa-home"></i> <span>首页</span></a>
                    <!-- <ul class="sub-menu-list">
                         <li class="active"><a href="/index"> Dashboard </a></li>
                     </ul>
                     -->
                 </li>
-                <li class="menu-list"><a href=""><i class="fa fa-laptop"></i> <span>XX管理</span></a>
-                    <ul class="sub-menu-list">
-                        <li class="active"><a href="#"> 新建xx </a></li>
-                        <li><a href="#"> 编辑xx </a></li>
+                <li ><a href="/daily/manage_daily"><i class="fa fa-laptop"></i> <span>日报管理</span></a>
+                   <!-- <ul class="sub-menu-list">
+                        <li class="active"><a href="/daily/create_daily"> 新建日报 </a></li>
                     </ul>
+                -->
                 </li>
              </ul>
             <!--sidebar nav end-->
