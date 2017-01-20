@@ -6,19 +6,20 @@ the url structure of website
 import sys #utf-8，兼容汉字
 reload(sys)
 sys.setdefaultencoding("utf-8")
+from handlers import base
+from handlers import auth
+from handlers.dailyreport import dailyreport
+from handlers.api import dailyreportapi
+from handlers.api import authapi
 
-from handlers.common import auth,error
-from handlers.opms import index
-from handlers.opms.daily import daily
-
-url = [
-    (r'/',index.IndexHandler),
+urls = [
     (r'/login',auth.LoginHandler),
-    (r'/index',index.IndexHandler),
     (r'/logout',auth.LogoutHandler),
-  #  (r'.*',error.PageNotFoundHandler),
-
-    (r'/daily/manage_daily',daily.DailyHandler),
-    (r'/daily/create_daily',daily.CreateDailyHandler),
-    (r'/daily/edit_daily',daily.EditDailyHandler),
+    (r'/index',base.IndexHandler),
+    (r'/about',dailyreport.AboutHandler),
+    (r'/dailyreport/list',dailyreport.ListDailyReportHandler),
+    (r'/dailyreport/add',dailyreport.AddDailyReportHandler),
+    (r'/api/dailyreport/list',dailyreportapi.ListApiHandler),
+    (r'/api/auth/checklogin',authapi.CheckLoginApiHandler),
 ]
+
