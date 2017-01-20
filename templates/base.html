@@ -42,7 +42,8 @@
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-user fa-fw"></i> 
                         {% if current_user %}
-                            {{ current_user.username }} 
+                            {{ current_user.username }}
+                            <span id="userid" style="display:none">{{ current_user.id }}</span> 
                         {% end %}
                         <i class="fa fa-caret-down"></i>
                     </a>
